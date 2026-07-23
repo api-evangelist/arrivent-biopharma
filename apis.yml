@@ -1,8 +1,25 @@
 aid: arrivent-biopharma
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arrivent-biopharma.png
 name: ArriVent Biopharma
-description: 'ArriVent Biopharma is a company surfaced as a portfolio company of hongshan and added to
-  the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'ArriVent BioPharma (NASDAQ: AVBP) is a clinical-stage biopharmaceutical company dedicated
+  to the identification, development, and commercialization of differentiated medicines for the treatment
+  of cancer. Its lead candidate is firmonertinib, an EGFR inhibitor being studied across non-small cell
+  lung cancer indications, and its pipeline includes next-generation antibody drug conjugates such as
+  ARR-002. The company operates by identifying novel oncology programs, in-licensing drug candidates
+  through partnerships, and designing regulatory-compliant clinical development strategies. It was surfaced
+  as a portfolio company of HongShan and added to the API Evangelist network; as a traditional pharmaceutical
+  developer it publishes no public API, developer portal, or technical integration surface.'
 url: https://raw.githubusercontent.com/api-evangelist/arrivent-biopharma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Biopharmaceutical
+- Oncology
+- Pharmaceuticals
+- Clinical Trials
+- Drug Development
 apis: []
+common:
+- type: DomainSecurity
+  url: security/arrivent-biopharma-domain-security.yml
+- type: Website
+  url: https://www.arrivent.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
